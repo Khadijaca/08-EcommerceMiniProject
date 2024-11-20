@@ -1,0 +1,267 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  background-color: #fff;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.navbar .navbarLogo {
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.navbarLogo a {
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.NavbarLinks {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 40px;
+  align-items: center;
+}
+.NavbarLinks li {
+  margin: 0 15px;
+  white-space: nowrap;
+}
+.NavbarLinks a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 250;
+}
+
+.navbarSearch {
+  position: relative;
+  margin: 0 50px;
+  width: 100%;
+  flex: 1;
+}
+.navbarSearch input {
+  width: 100%;
+  padding: 10px 40px;
+  border: 1px solid #ccc;
+  background-color: #F0F0F0;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 350;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.searchItems {
+  display: flex;
+  align-items: center;
+}
+.searchItems .searchIcon {
+  position: absolute;
+  left: 15px;
+  font-size: 1rem;
+}
+
+.navbarIcons {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 10px;
+  gap: 8px;
+  color: black;
+}
+.navbarIcons .icon {
+  display: inline-block;
+}
+
+.discount-container {
+  background-color: black;
+  width: 100%;
+  height: 38px;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.discount-container a {
+  text-decoration: underline;
+}
+
+.discount-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+.discount-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.discount-items i {
+  cursor: pointer;
+}
+.discount-items a {
+  cursor: pointer;
+}
+
+.mainContainer {
+  width: 100%;
+  background-color: #f2f0f1;
+}
+
+.main-pic img {
+  display: flex;
+  justify-content: center;
+}
+
+.mainItems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainText {
+  padding-top: 103px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mainText h1 {
+  font-size: 64px;
+  font-weight: 1000;
+}
+
+.mainText p {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.shop-button {
+  width: 210px;
+  height: 52px;
+  border-radius: 62px;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+.shop-button:hover {
+  background-color: #3d3d3d;
+  cursor: pointer;
+}
+
+.mainNumbers p {
+  font-size: 40px;
+  color: black;
+  font-weight: 500;
+  padding: 0 32px;
+}
+
+.mainNumbers {
+  display: flex;
+  flex-direction: row;
+  margin-left: -32px;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.brands-container {
+  background-color: black;
+  height: 122px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.brands {
+  display: flex;
+  gap: 106px;
+}
+
+html * {
+  font-family: "Poppins";
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 16px;
+}/*# sourceMappingURL=app.css.map */
